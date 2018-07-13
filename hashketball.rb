@@ -288,12 +288,13 @@ game_hash[:home][:players].each do |name, player|
       steal_counter = player[:steals]
       name_container = name
     end 
+  end 
 game_hash[:away][:players].each do |name, player|
     if player[:steals] > steal_counter
       steal_counter = player[:steals]
       name_container = name
     end 
-      
+  end 
 
 #Compare found name with the player of the longest name 
 player_with_longest_name == name_container
